@@ -1,7 +1,7 @@
 {
-  "name": "instagram_feed",
+  "name": "rasf",
   "version": "1.0.0",
-  "description": "Instagram React block",
+  "description": "React app single file",
   "main": "app/index.js",
   "author": "Isaac Bigsby Trogdon",
   "license": "MIT",
