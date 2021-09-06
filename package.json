@@ -1,0 +1,49 @@
+{
+  "name": "instagram_feed",
+  "version": "1.0.0",
+  "description": "Instagram React block",
+  "main": "app/index.js",
+  "author": "Isaac Bigsby Trogdon",
+  "license": "MIT",
+  "scripts": {
+    "create_webpack": "webpack",
+    "build": "webpack --env production --mode production",
+    "watch": "webpack --watch --progress",
+    "start": "webpack-dev-server --open --env development --mode development",
+    "dev": "webpack-dev-server --env development --mode development"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "browsers": [
+              "IE >= 11",
+              "last 3 versions"
+            ]
+          }
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-ig-feed": "^1.0.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.4",
+    "@babel/preset-env": "^7.15.4",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "dotenv-webpack": "^7.0.3",
+    "html-webpack-plugin": "^5.3.2",
+    "style-loader": "^3.2.1",
+    "webpack": "^5.51.2",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.1.0"
+  }
+}
